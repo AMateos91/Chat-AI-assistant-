@@ -9,9 +9,9 @@ def softmax(z):
     s = s[:, np.newaxis] # necessary step to do broadcasting
     e_x = np.exp(z - s)
     div = np.sum(e_x, axis=1)
-    div = div[:, np.newaxis] # dito
+    div = div[:, np.newaxis] 
     return e_x / div
 
 
-x1 = np.array([[1, 2, 3, 6]])
+x1 = np.array([[xxx, xxx, xxx, xxx]])
 softmax(x1)
